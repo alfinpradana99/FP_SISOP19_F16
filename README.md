@@ -56,3 +56,8 @@ void* mati(void *arg)
 ```
 
 ### FUSE
+Untuk fusenya, ada beberapa tahapan, yaitu :
+1. Mengumpulkan semua lagu di /home/user dalam satu folder /home/user/Music.
+        Mencari semua file mp3 di semua direktori dalam home. Apabila di dalam direktori ada direktori, lakukan rekursi terhadap fungsi pencarian (fungsi direktori dalam source code). Apabila berupa file, maka cek, apakah tipe file tersebut .mp3 atau bukan, jika iya maka copy file tersebut ke /home/user/Music. Akan dilakukan hingga tidak ada direktori yang bisa dibuka lagi.
+2. Setelah terkumpul semua file mp3nya dalam folder /home/user/Music, maka lakukan fuse untuk folder Music.
+        Lakukan fuse terhadap folder /home/user/Music. Maka akan terbentuk mounted folder yang berisi file mp3.
