@@ -1,6 +1,8 @@
 # FP_SISOP19_F16
 
 ## MP3 PLAYER
+
+### THREAD
 untuk mengerjakan mp3 player ini dapat menggunakan thread. Fitur-fitur yang di inginkan dalam MP3 Player ini adalah play, pause, resume, previous, next, dan exit. Maka setiap fitur yang ada akan dibuat threadnya masing-masing. MP3 Player ini akan mengambil lagu-lagu yang ada di suatu folder dan membuatnya menjadi sebuah list. Lalu MP3 Player ini bisa memainkan lagu pertama, dan berganti lagu dengan fitur next dan previous. Berikut Step by step membuat MP3 Player :
 
 1. Munculkan List lagu yang ada di sebuah folder
@@ -53,3 +55,4 @@ void* mati(void *arg)
 }
 ```
 
+### FUSE
